@@ -65,7 +65,7 @@ com.example.spacecolony
 See `UML_diagram_final.pdf` in this repository.
 
 ## 🎬 Video Demonstration
-[Video Link — add here]
+https://lut-my.sharepoint.com/:v:/r/personal/enkhjin_sanchir_student_lut_fi/Documents/SpaceColonyProject.mov?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jRFQV6
 
 ## 🛠️ Tools Used
 - Android Studio
