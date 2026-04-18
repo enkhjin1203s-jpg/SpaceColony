@@ -60,7 +60,8 @@ com.example.spacecolony
 ├── filemanager  — FileManager
 └── ui.fragments — MainActivity, 8 fragments
 ```
-
+## 📄 Project Documentation
+See OOP_Project_Documentation.pdf in this repository.
 ## 📊 UML Diagram
 See `UML_diagram_final.pdf` in this repository.
 
