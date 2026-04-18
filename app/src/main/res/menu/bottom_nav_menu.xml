@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"      android:title="Home"      android:icon="@android:drawable/ic_menu_compass" />
+    <item android:id="@+id/nav_recruit"   android:title="Recruit"   android:icon="@android:drawable/ic_menu_add" />
+    <item android:id="@+id/nav_quarters"  android:title="Quarters"  android:icon="@android:drawable/ic_menu_myplaces" />
+    <item android:id="@+id/nav_simulator" android:title="Simulator" android:icon="@android:drawable/ic_menu_manage" />
+    <item android:id="@+id/nav_mission"   android:title="Mission"   android:icon="@android:drawable/ic_menu_share" />
+    <item android:id="@+id/nav_more"      android:title="More"      android:icon="@android:drawable/ic_menu_more" />
+</menu>

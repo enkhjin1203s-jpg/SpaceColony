@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0A0E1A"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MORE"
+            android:textColor="#7DD3FC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Statistics -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111827"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊  STATISTICS"
+                android:textColor="#6EE7B7"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your colony's performance. See total missions, win rate, and per-crew records including missions completed, victories and training sessions."
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+            <Button
+                android:id="@+id/btnGoStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="GO TO STATISTICS"
+                android:backgroundTint="#064E3B"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- MedBay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111827"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✚  MEDBAY"
+                android:textColor="#F9A8D4"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crew who fall in battle recover here instead of dying. They need 2 missions to recover. Discharge them back to Quarters once ready."
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+            <Button
+                android:id="@+id/btnGoMedBay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="GO TO MEDBAY"
+                android:backgroundTint="#831843"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- How to Play -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOW TO PLAY"
+            android:textColor="#7DD3FC"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#111827" android:padding="12dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="①" android:textColor="#7DD3FC" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RECRUIT CREW" android:textColor="#F1F5F9" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go to Recruit tab. Give your crew member a name and pick a specialization. Each has different skill, resilience and HP stats." android:textColor="#94A3B8" android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#111827" android:padding="12dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="②" android:textColor="#7DD3FC" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRAIN IN SIMULATOR" android:textColor="#F1F5F9" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From Quarters, move crew to the Simulator tab. Train them to gain XP. Each XP increases skill power. Return to Quarters to restore full HP." android:textColor="#94A3B8" android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#111827" android:padding="12dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="③" android:textColor="#7DD3FC" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SEND ON MISSION" android:textColor="#F1F5F9" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From Quarters, move 2–3 crew to Mission Control. Go to Mission tab, select them and press LAUNCH MISSION. A threat is generated automatically." android:textColor="#94A3B8" android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#111827" android:padding="12dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="④" android:textColor="#7DD3FC" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIGHT THE THREAT" android:textColor="#F1F5F9" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Each turn choose ATTACK, DEFEND, or SPECIAL. The threat retaliates after each action. Win by reducing threat HP to zero before losing all crew." android:textColor="#94A3B8" android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#111827" android:padding="12dp" android:layout_marginBottom="6dp">
+            <TextView android:layout_width="32dp" android:layout_height="wrap_content" android:text="⑤" android:textColor="#7DD3FC" android:textSize="18sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RECOVER &amp; REPEAT" android:textColor="#F1F5F9" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Survivors return to Quarters with full HP and keep their XP. Defeated crew go to MedBay tab and recover after 2 missions. Threats get harder each mission." android:textColor="#94A3B8" android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

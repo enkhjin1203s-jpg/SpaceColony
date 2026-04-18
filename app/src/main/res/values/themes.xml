@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SpaceColony" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1D4ED8</item>
+        <item name="colorPrimaryVariant">#1E3A8A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#7DD3FC</item>
+        <item name="colorOnSecondary">#0A0E1A</item>
+        <item name="android:windowBackground">#0A0E1A</item>
+        <item name="android:statusBarColor">#0A0E1A</item>
+        <item name="android:navigationBarColor">#111827</item>
+    </style>
+</resources>

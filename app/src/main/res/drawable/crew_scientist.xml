@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Body -->
+    <path android:fillColor="#A855F7"
+        android:pathData="M20,40 Q20,55 32,55 Q44,55 44,40 L44,30 L20,30 Z"/>
+    <!-- Head -->
+    <path android:fillColor="#FBBF24"
+        android:pathData="M24,20 A8,10 0 1,1 40,20 A8,10 0 1,1 24,20 Z"/>
+    <!-- Helmet -->
+    <path android:fillColor="#D8B4FE" android:fillAlpha="0.5"
+        android:pathData="M22,18 A10,12 0 1,1 42,18 A10,12 0 1,1 22,18 Z"/>
+    <!-- Flask -->
+    <path android:fillColor="#E9D5FF"
+        android:pathData="M42,38 L46,50 L54,50 L58,38 Z"/>
+    <path android:fillColor="#C084FC"
+        android:pathData="M44,44 L56,44 L54,50 L46,50 Z"/>
+    <path android:fillColor="#9CA3AF"
+        android:pathData="M46,34 L54,34 L54,38 L46,38 Z"/>
+</vector>

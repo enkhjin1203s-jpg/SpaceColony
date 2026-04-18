@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATISTICS"
+            android:textColor="#7DD3FC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Metric cards row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="#111827" android:padding="14dp" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MISSIONS" android:textColor="#475569" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/txtStatTotalMissions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#7DD3FC" android:textSize="28sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="#111827" android:padding="14dp" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WINS" android:textColor="#475569" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/txtStatWins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#4ADE80" android:textSize="28sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="#111827" android:padding="14dp" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOSSES" android:textColor="#475569" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/txtStatLosses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#F87171" android:textSize="28sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:background="#111827" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CREW" android:textColor="#475569" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/txtStatCrew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FCD34D" android:textSize="28sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Win rate bar card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111827"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WIN RATE"
+                    android:textColor="#475569"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtWinRatePct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="#4ADE80"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Bar track -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#1E293B">
+
+                <View
+                    android:id="@+id/viewWinBar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#4ADE80" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0%" android:textColor="#334155" android:textSize="10sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" android:textColor="#334155" android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Per-crew section label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREW RECORDS"
+            android:textColor="#475569"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Per-crew rows injected here -->
+        <LinearLayout
+            android:id="@+id/layoutCrewStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/txtNoStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No crew statistics yet. Complete a mission to see records."
+            android:textColor="#475569"
+            android:textSize="13sp"
+            android:padding="16dp"
+            android:background="#111827"
+            android:visibility="gone" />
+
+        <!-- Hidden legacy views for compat -->
+        <TextView android:id="@+id/txtColonyStats" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+        <TextView android:id="@+id/txtCrewStats"   android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

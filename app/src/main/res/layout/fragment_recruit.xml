@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECRUIT"
+            android:textColor="#7DD3FC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crew member name"
+            android:textColor="#E0F2FE"
+            android:textColorHint="#475569"
+            android:backgroundTint="#334155"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPECIALIZATION"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton android:id="@+id/radioPilot"     android:text="🔵 Pilot"     android:textColor="#7DD3FC" android:buttonTint="#7DD3FC" android:layout_marginBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioEngineer"  android:text="🟡 Engineer"  android:textColor="#FCD34D" android:buttonTint="#FCD34D" android:layout_marginBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioMedic"     android:text="🟢 Medic"     android:textColor="#6EE7B7" android:buttonTint="#6EE7B7" android:layout_marginBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioScientist" android:text="🟣 Scientist" android:textColor="#C4B5FD" android:buttonTint="#C4B5FD" android:layout_marginBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioSoldier"   android:text="🔴 Soldier"   android:textColor="#FCA5A5" android:buttonTint="#FCA5A5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Stat preview card — shown when a specialization is selected -->
+        <LinearLayout
+            android:id="@+id/cardSpecPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111827"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtSpecName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F1F5F9"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/txtSpecDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Stat bars row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Skill -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SKILL" android:textColor="#64748B" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/txtSpecSkill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#7DD3FC" android:textSize="22sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Resilience -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RESILIENCE" android:textColor="#64748B" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/txtSpecRes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FCD34D" android:textSize="22sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- HP -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAX HP" android:textColor="#64748B" android:textSize="10sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/txtSpecHp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#4ADE80" android:textSize="22sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="#1E293B" android:layout_marginTop="12dp" android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/txtSpecTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#475569"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnCreate" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="RECRUIT" android:backgroundTint="#1D4ED8" android:textColor="#FFFFFF" android:layout_marginEnd="8dp" />
+            <Button android:id="@+id/btnClear"  android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="CLEAR"   android:backgroundTint="#1E293B" android:textColor="#94A3B8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4ADE80"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

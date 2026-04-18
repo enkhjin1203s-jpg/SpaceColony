@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Body -->
+    <path android:fillColor="#22C55E"
+        android:pathData="M20,40 Q20,55 32,55 Q44,55 44,40 L44,30 L20,30 Z"/>
+    <!-- Head -->
+    <path android:fillColor="#FBBF24"
+        android:pathData="M24,20 A8,10 0 1,1 40,20 A8,10 0 1,1 24,20 Z"/>
+    <!-- Helmet -->
+    <path android:fillColor="#86EFAC" android:fillAlpha="0.5"
+        android:pathData="M22,18 A10,12 0 1,1 42,18 A10,12 0 1,1 22,18 Z"/>
+    <!-- Cross symbol -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M29,36 L35,36 L35,33 L29,33 Z"/>
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M30.5,34.5 L33.5,34.5 L33.5,29 L30.5,29 Z"/>
+</vector>

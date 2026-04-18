@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E1A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0F172A"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬡ SPACE COLONY"
+                android:textColor="#7DD3FC"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commander, your colony awaits your orders."
+                android:textColor="#94A3B8"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#1E293B"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtTotalCrew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👥 Crew: 0"
+                    android:textColor="#CBD5E1"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:layout_marginEnd="20dp" />
+
+                <TextView
+                    android:id="@+id/txtMissionsCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 Missions: 0"
+                    android:textColor="#FCD34D"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- New player hint -->
+        <LinearLayout
+            android:id="@+id/layoutNewPlayerHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#0C1A2E"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→"
+                android:textColor="#7DD3FC"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, Commander!"
+                    android:textColor="#F1F5F9"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No crew recruited yet. Tap here to recruit your first crew member."
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Colony Status label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="COLONY STATUS"
+                android:textColor="#475569"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tap to navigate →"
+                android:textColor="#334155"
+                android:textSize="10sp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtColonySummary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <!-- Row 1: Quarters + Simulator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/cardQuarters"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#111827"
+                android:padding="14dp"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏠" android:textSize="22sp" android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/txtQuartersCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#7DD3FC" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quarters" android:textColor="#64748B" android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardSimulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#111827"
+                android:padding="14dp"
+                android:layout_marginStart="6dp"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚙️" android:textSize="22sp" android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/txtSimulatorCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FCD34D" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simulator" android:textColor="#64748B" android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Row 2: Mission + MedBay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/cardMission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#111827"
+                android:padding="14dp"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯" android:textSize="22sp" android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/txtMissionCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#F87171" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mission Control" android:textColor="#64748B" android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardMedBay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#111827"
+                android:padding="14dp"
+                android:layout_marginStart="6dp"
+                android:clickable="true"
+                android:focusable="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✚" android:textColor="#F9A8D4" android:textSize="22sp" android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/txtMedBayCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#F9A8D4" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MedBay" android:textColor="#64748B" android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Management buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COLONY MANAGEMENT"
+            android:textColor="#475569"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="48dp" android:text="SAVE COLONY" android:backgroundTint="#1D4ED8" android:textColor="#FFFFFF" android:layout_marginBottom="8dp" />
+        <Button android:id="@+id/btnLoad" android:layout_width="match_parent" android:layout_height="48dp" android:text="LOAD LAST COLONY" android:backgroundTint="#064E3B" android:textColor="#FFFFFF" android:layout_marginBottom="8dp" />
+        <Button android:id="@+id/btnNewGame" android:layout_width="match_parent" android:layout_height="48dp" android:text="NEW COLONY" android:backgroundTint="#7F1D1D" android:textColor="#FFFFFF" />
+
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    </LinearLayout>
+</ScrollView>

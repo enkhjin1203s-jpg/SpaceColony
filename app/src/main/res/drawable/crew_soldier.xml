@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Body -->
+    <path android:fillColor="#EF4444"
+        android:pathData="M20,40 Q20,55 32,55 Q44,55 44,40 L44,30 L20,30 Z"/>
+    <!-- Head -->
+    <path android:fillColor="#FBBF24"
+        android:pathData="M24,20 A8,10 0 1,1 40,20 A8,10 0 1,1 24,20 Z"/>
+    <!-- Helmet -->
+    <path android:fillColor="#FCA5A5" android:fillAlpha="0.5"
+        android:pathData="M22,18 A10,12 0 1,1 42,18 A10,12 0 1,1 22,18 Z"/>
+    <!-- Gun -->
+    <path android:fillColor="#374151"
+        android:pathData="M44,36 L58,36 L58,39 L44,39 Z"/>
+    <path android:fillColor="#1F2937"
+        android:pathData="M48,39 L52,39 L52,42 L48,42 Z"/>
+</vector>
